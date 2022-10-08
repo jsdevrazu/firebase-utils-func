@@ -1,0 +1,35 @@
+{
+  "name": "@jsdevrazu/firebase-utils-func",
+  "version": "1.0.0",
+  "description": "Hey guys, I build a react-firebase-library to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdevrazu/firebase-utils-func"
+  },
+  "keywords": [
+    "react-firebase",
+    "firebase utils function",
+    "firebase function",
+    "firebase",
+    "react",
+    "react-firebase-library"
+  ],
+  "author": "Razu Islam <islamrajulearn.dev@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jsdevrazu/firebase-utils-func",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "firebase": "^9.10.0"
+  }
+}
