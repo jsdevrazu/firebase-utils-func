@@ -1,6 +1,6 @@
 {
   "name": "firebase-utils-func",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Hey guys, I build a react-firebase-library to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

@@ -1,18 +1,18 @@
-# react-firebase-lib
+# firebase-utils-func
 
 Hey guys,
-I build a react-firebase-lib to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it. 
+I build a firebase-utils-func to manage people's time. When you create any firebase function you need to write much code. So I decided to build some helper functions to manage our time. It's a fun purpose I build this small library. Hope you guys enjoy it. 
 
 ## Installation
 
-Use the package manager [react-firebase-lib](https://github.com/jsdevraju/react-firebase-library) to install react-firebase-lib.
+Use the package manager [firebase-utils-func](https://github.com/jsdevrazu/firebase-utils-func) to install firebase-utils-func
 
 ```bash
 npm install firebase
-npm install react-firebase-lib
+npm install firebase-utils-func
 #or
 yarn add firebase
-yarn add react-firebase-lib
+yarn add firebase-utils-func
 ```
 
 ## Config your firebase file
@@ -57,14 +57,14 @@ import {
   deleteCollection,
   getCollections,
   getCollection,
-} from "react-firebase-lib";
+} from "firebase-utils-func";
 ```
 
 ## Usage Upload File
 ```javascript
 import { ChangeEvent,, useState } from "react";
 import { storage } from "../firebase"; //your firebase config file auth variable
-import { uploadFiles } from "react-firebase-lib"; //import uploadFiles function from react-firebase-lib
+import { uploadFiles } from "firebase-utils-func"; //import uploadFiles function from firebase-utils-func
 
 
 const Home = () => {
@@ -100,7 +100,7 @@ export default Home;
 ```javascript
 import { useState } from "react";
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { registerApi } from "react-firebase-lib"; //import registerApi function from react-firebase-lib
+import { registerApi } from "firebase-utils-func"; //import registerApi function from firebase-utils-func
 
 const Home = () => {
 const [email, setEmail] = useState("")
@@ -133,7 +133,7 @@ export default Home;
 ```javascript
 import {useState } from "react";
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { loginApi } from "react-firebase-lib"; //import loginApi function from react-firebase-lib
+import { loginApi } from "firebase-utils-func"; //import loginApi function from firebase-utils-func
 
 const Home = () => {
 const [email, setEmail] = useState("")
@@ -165,7 +165,7 @@ export default Home;
 ## Usage Google Login Firebase Function
 ```javascript
 import { auth, provierGoogle } from "../firebase"; //your firebase config file auth and provierGoogle variable
-import { googleApi } from "react-firebase-lib"; //import googleApi function from react-firebase-lib
+import { googleApi } from "firebase-utils-func"; //import googleApi function from firebase-utils-func
 
 const Home = () => {
   const handleSubmit = async (e) =>{
@@ -192,7 +192,7 @@ export default Home;
 ## Usage Facebook Login Firebase Function
 ```javascript
 import { auth, provierFacebok} from "../firebase"; //your firebase config file auth and provierGoogle variable
-import { facebookApi } from "react-firebase-lib"; //import facebookApi function from react-firebase-lib
+import { facebookApi } from "firebase-utils-func"; //import facebookApi function from firebase-utils-func
 
 const Home = () => {
   const handleSubmit = async (e) =>{
@@ -219,7 +219,7 @@ export default Home;
 ## Usage Forgot Password Firebase Function
 ```javascript
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { forgotPassApi } from "react-firebase-lib"; //import forgotPassApi function from react-firebase-lib
+import { forgotPassApi } from "firebase-utils-func"; //import forgotPassApi function from firebase-utils-func
 
 const Home = () => {
 const [email, setEmail] = useState("")
@@ -247,7 +247,7 @@ export default Home;
 ## Usage Logout Firebase Function
 ```javascript
 import { auth } from "../firebase"; //your firebase config file auth variable
-import { signOutApi } from "react-firebase-lib"; //import signOutApi function from react-firebase-lib
+import { signOutApi } from "firebase-utils-func"; //import signOutApi function from firebase-utils-func
 
 const Home = () => {
   const handleLogout = async () =>{
@@ -276,7 +276,7 @@ export default Home;
 ## Usage Create Database Collection Firebase Function
 ```javascript
 import { db } from "../firebase"; //your firebase config file auth variable
-import { createCollection } from "react-firebase-lib"; //import createCollection function from react-firebase-lib
+import { createCollection } from "firebase-utils-func"; //import createCollection function from firebase-utils-func
 
 const Home = () => {
   const handleSubmit = async (e) =>{
@@ -304,7 +304,7 @@ export default Home;
 ```javascript
 import { useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { getCollections } from "react-firebase-lib"; //import getCollections function from react-firebase-lib
+import { getCollections } from "firebase-utils-func"; //import getCollections function from firebase-utils-func
 
 const Home = () => {
 
@@ -328,7 +328,7 @@ export default Home;
 ```javascript
 import {useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { getCollection } from "react-firebase-lib"; //import getCollections function from react-firebase-lib
+import { getCollection } from "firebase-utils-func"; //import getCollections function from firebase-utils-func
 
 const Home = () => {
 //in next js before you need import useRouter hooks
@@ -356,7 +356,7 @@ export default Home;
 ```javascript
 import {useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { updateCollection } from "react-firebase-lib"; //import updateCollection function from react-firebase-lib
+import { updateCollection } from "firebase-utils-func"; //import updateCollection function from firebase-utils-func
 
 const Home = () => {
   const updateData = async () => {
@@ -385,7 +385,7 @@ export default Home;
 ```javascript
 import { useEffect } from "react";
 import { db } from "../firebase"; //your firebase config file auth variable
-import { deleteCollection } from "react-firebase-lib"; //import deleteCollection function from react-firebase-lib
+import { deleteCollection } from "firebase-utils-func"; //import deleteCollection function from firebase-utils-func
 
 const Home = () => {
   const updateData = async () => {
